@@ -1,0 +1,52 @@
+<div class="limiter">
+  <div class="container-login100"  style="background-color: white">
+    <div class="wrap-login100">
+      <div class="login100-form-title" style="background-image: url(images/bg.jpg);">
+        <span class="login100-form-title-1" style="font-size: 25pt">
+          LOGIN
+        </span>
+      </div>
+
+      <form [formGroup] = " loginForm" class="login100-form validate-form">
+        <div class="wrap-input100 validate-input m-b-26" data-validate="Email is required">
+          <span class="label-input100" style="font-size: 15pt"><b>Email</b></span>
+          <input class="input100" type="text" formControlName="email" placeholder="Enter Email" required>
+          <span class="focus-input100"></span>
+        </div>
+
+        <div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+          <span class="label-input100" style="font-size: 15pt"><b>Password</b></span>
+          <input class="input100" type="password" formControlName="password" placeholder="Enter password" required>
+          <span class="focus-input100"></span>
+        </div>
+
+        <div class="flex-sb-m w-full p-b-30">
+          <div class="contact100-form-checkbox">
+            <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+            <label class="label-checkbox100" for="ckb1" style="font-size: 12pt">
+            <b>	Remember me</b>
+            </label>
+          </div>
+
+          <div>
+            <a href="#" class="txt1" style="font-size: 12pt">
+            <b>Forgot Password?</b>
+            </a>
+          </div>
+        </div>
+
+        <div class="container-login100-form-btn">
+          <button class="login100-form-btn" type="submit" (click)="login()">
+            <b>Login</b>
+          </button>
+          <button class="login100-form-btn" type="submit" (click)="moveToRegister()">
+            <b>Register</b>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
